@@ -46,7 +46,6 @@ e quindi, moltiplicando il tutto per $p$ otteniamo una equazione di secondo grad
 ## Approssimazione dei valori di $k$ e $d$ 
 Definita la modalità di stima del totiente della funzione, concentriamoci ora sulla parte centrale di come l'attacco funziona.
 Ricordando che $$\displaylines{ed -k\phi(N) = 1}$$ e compiendo dei calcoli banali algebrici, è possibile scrivere che 
-$s_{11} = \left.\frac{b_1}{a_1}\right|_{a_2=0}$
 
 $$\Bigg|\frac{e}{\phi(N)} - \frac{k}{d}\Bigg| = \frac{1}{d\phi(N)}$$
 Quindi se il secondo membro dell'ultima è sufficientemente piccolo, il rapporto $\frac{k}{d}$ è una approssimazione razionale di $\frac{e}{\phi(N)}$ . Quindi essendo a conoscenza di quest'ultimo valore riusciamo a risalire alla chiave privata. Problema: l'attaccante non conosce il valore di $\phi(N)$ ma solo il valore di $e$ ed $N$. Ci sono alcune condizioni in cui posso derivare $\frac{k}{d}$ conoscendo solo $e$ ed $N$?
@@ -55,6 +54,9 @@ Questo viene descritto dal teorema di Wiener.
 
 ## Teorema di Wiener
 Sia $N = pq$ con $q<p<2q$ . Sia inoltre $d< \frac{1}{3} N^{1/4}$. Allora, data una coppia $(e,\ N)$ è possibile ricavare il valore corretto di $\frac{k}{d}$ tra i convergenti di $\frac{e}{N}$.
+
+### DIMOSTRAZIONE
+
 ## Procedura d'attacco
 L'intera procedura di attacco si basa sui seguenti passaggi:
 - data una coppia di valori $(e,\ N)$, verificare le condizioni di applicabilità del teorema di Wiener
