@@ -56,6 +56,7 @@ Questo viene descritto dal teorema di Wiener.
 Sia $N = pq$ con $q<p<2q$ . Sia inoltre $d< \frac{1}{3} N^{1/4}$. Allora, data una coppia $(e,\ N)$ è possibile ricavare il valore corretto di $\frac{k}{d}$ tra i convergenti di $\frac{e}{N}$.
 
 ### DIMOSTRAZIONE
+La dimostrazione si basa1
 
 ## Procedura d'attacco
 L'intera procedura di attacco si basa sui seguenti passaggi:
