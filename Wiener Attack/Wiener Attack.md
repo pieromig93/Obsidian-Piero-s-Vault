@@ -56,7 +56,15 @@ Questo viene descritto dal teorema di Wiener.
 Sia $N = pq$ con $q<p<2q$ . Sia inoltre $d< \frac{1}{3} N^{1/4}$. Allora, data una coppia $(e,\ N)$ è possibile ricavare il valore corretto di $\frac{k}{d}$ tra i convergenti di $\frac{e}{N}$.
 
 ### DIMOSTRAZIONE
-La dimostrazione si basa
+La dimostrazione si basa sulla relazione che coesiste tra la chiave pubblica e privata. Ovvero $$ ed \ mod \ \phi(N)  = 1 $$
+compiendo dei calcoli banali algebrici, è possibile scrivere che 
+
+$$\Bigg|\frac{e}{\phi(N)} - \frac{k}{d}\Bigg| = \frac{1}{d\phi(N)}$$
+Sebbene l'attaccante non conosca il valore di $\phi(N)$ può approssimarlo. Come?
+$$\phi(N) = (p-1)(q-1)\ con \ |p+q-1|<3\sqrt(N)$$
+
+quindi si ottiene che $$|N - \phi(N)|<3\sqrt(N)$$
+utilizzando $N$ al posto del $\phi(N)$ si ottiene che
 
 ## Procedura d'attacco
 L'intera procedura di attacco si basa sui seguenti passaggi:
@@ -66,5 +74,3 @@ L'intera procedura di attacco si basa sui seguenti passaggi:
 - utilizzando i convergenti, per ogni coppia $(k_i,\ d_i)$ provenienti dall'insieme degli stessi, valutare un possibile valore  di $\phi_i(N)$.
 - trovare i possibili fattori che compongono $N$ risolvendo l'equazione del secondo ordine vista prima
 - se il prodotto tra le radici di tale equazione è proprio pari ad $N$ allora le stime che ho fatto sui valori di $d$ ed $\phi(N)$ sono corrette. L'attacco è completo.
-
-## Esempio
