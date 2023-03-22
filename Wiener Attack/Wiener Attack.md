@@ -74,3 +74,11 @@ L'intera procedura di attacco si basa sui seguenti passaggi:
 - utilizzando i convergenti, per ogni coppia $(k_i,\ d_i)$ provenienti dall'insieme degli stessi, valutare un possibile valore  di $\phi_i(N)$.
 - trovare i possibili fattori che compongono $N$ risolvendo l'equazione del secondo ordine vista prima
 - se il prodotto tra le radici di tale equazione è proprio pari ad $N$ allora le stime che ho fatto sui valori di $d$ ed $\phi(N)$ sono corrette. L'attacco è completo.
+
+## Esecuzione 
+
+
+## Problemi
+Le problematiche riscontrate sono:
+- quando i numero di convergenti non è sufficientemente grande da poter ricavare il valore della chiave privata *d*;
+- tempi di esecuzione: crescono in modo quadratico
